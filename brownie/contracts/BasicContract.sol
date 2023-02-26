@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+contract BasicContract {
+    //a variable for storing numbers
+    uint256 number;
+    //function for storing a number
+    function storeNumber(uint256 _number) public {
+        number = _number;
+    }
+    //function for reading the number
+    function readNumber() public view returns (uint256) {
+        return number;
+    }
+}
